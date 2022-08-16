@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+    <script>
+        function ctof() {
+            var tempvalue = document.getElementById("value").value;
+            var valueInF = tempvalue * (9 / 5) + 32;
+            if (tempvalue == "") {
+                alert("Please enter the celsius value")
+            } else {
+                alert("Tempreture in Farenhite is " + valueInF);
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="">
+       <label for="name">Please enter the tempreture in Celsius: </label>
+       <input type="number" id="value" name="name">                
+       <input type="submit" value="Enter" onclick="ctof()"  />
+   </form>
+
+
+</body>
+
+</html>
